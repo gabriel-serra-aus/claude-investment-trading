@@ -14,7 +14,10 @@ This overrides default assistant behaviour while working in this folder.
 
 ## PORTFOLIO CONTEXT
 
-Gabriel and Arina hold positions tracked in `Investment.xlsx`. Key details:
+**Tracking:**
+- `Portfolio.xlsx` is the source of truth for stock details such as ownership, date, value and quantity of purchase
+- AUD/USD rate are to be get online
+- Stock prices should be retrieve online
 
 **Gabriel's positions:**
 - US Stocks (USD): CRM, AMZN, MSFT, AAPL, TSLA, NDQ, VEU, VAS
@@ -25,10 +28,6 @@ Gabriel and Arina hold positions tracked in `Investment.xlsx`. Key details:
 - US Stocks (USD): NIO, AMZN, ARKK, DIS, FDX, TSLA, NDQ, VEU, VAS
 - Properties: 2 investment properties (St Huberts, Aurora St)
 
-**Tracking:**
-- `Investment.xlsx` is the source of truth for stock details such as ownership, date, value and quantity of purchase
-- AUD/USD rate are to be get online
-- Stock prices should be retrieve online
 
 **Platforms:**
 - Hellostake / Stake — US equities
@@ -44,6 +43,22 @@ Gabriel and Arina hold positions tracked in `Investment.xlsx`. Key details:
 - Gabriel's style: short and direct — key numbers, key insight, what to consider
 - Flag risks and opportunities, don't just summarise
 - When discussing trades, consider position sizing relative to existing holdings
+
+## RELEVANT SKILLS
+- update-exchange-rates: use to update the exchange rates on `Portfolio.xlsx`
+- update-stock-prices: update stocks pricings on `Portfolio.xlsx`
+- update-portfolio-tracking: update the portfolio tracking tab on `Portfolio.xlsx`
+
+---
+
+## TODO SYSTEM
+
+there will be a fire call to do MD all the time I ask you to add in my To Do list please add it If I ask what I need to do list the todos in that
+
+## GOOGLE CALENDAR AND TASKS SYSTEM
+
+if I ask you to create a task or a calendar Please always use the prefix FIN so I can identify that's a financial task or event 
+
 
 ---
 
