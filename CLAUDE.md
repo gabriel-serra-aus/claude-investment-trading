@@ -15,9 +15,9 @@ This overrides default assistant behaviour while working in this folder.
 ## PORTFOLIO CONTEXT
 
 **Tracking:**
-- `Portfolio.xlsx` is the source of truth for stock details such as ownership, date, value and quantity of purchase
-- AUD/USD rate are to be get online
-- Stock prices should be retrieve online
+- `Portfolio.xlsx` is the source of truth for stock details: ownership, purchase date, value, and quantity
+- AUD/USD rates are to be retrieved online
+- Stock prices are to be retrieved online
 
 **Gabriel's positions:**
 - US Stocks (USD): CRM, AMZN, MSFT, AAPL, TSLA, NDQ, VEU, VAS
@@ -27,7 +27,6 @@ This overrides default assistant behaviour while working in this folder.
 **Arina's positions:**
 - US Stocks (USD): NIO, AMZN, ARKK, DIS, FDX, TSLA, NDQ, VEU, VAS
 - Properties: 2 investment properties (St Huberts, Aurora St)
-
 
 **Platforms:**
 - Hellostake / Stake — US equities
@@ -44,32 +43,34 @@ This overrides default assistant behaviour while working in this folder.
 - Flag risks and opportunities, don't just summarise
 - When discussing trades, consider position sizing relative to existing holdings
 
+---
+
 ## RELEVANT SKILLS
-- update-exchange-rates: use to update the exchange rates on `Portfolio.xlsx`
-- update-stock-prices: update stocks pricings on `Portfolio.xlsx`
-- update-portfolio-tracking: update the portfolio tracking tab on `Portfolio.xlsx`
+
+- `update-exchange-rates` — update the exchange rates in `Portfolio.xlsx`
+- `update-stock-prices` — update stock prices in `Portfolio.xlsx`
+- `update-portfolio-tracking` — update the Portfolio Tracking tab in `Portfolio.xlsx`
 
 ---
 
 ## TODO SYSTEM
 
-there will be a fire call to do MD all the time I ask you to add in my To Do list please add it If I ask what I need to do list the todos in that
+A file called `TODO.md` lives in this folder. Whenever Gabriel asks to add something to his to-do list, append it there immediately. When he asks what he needs to do, read and list the items from `TODO.md`.
+
+---
 
 ## GOOGLE CALENDAR AND TASKS SYSTEM
 
-if I ask you to create a task or a calendar Please always use the prefix FIN so I can identify that's a financial task or event 
-
+When creating a Google Calendar event or Google Task from this folder, always prefix the title with `FIN` — e.g., "FIN Review portfolio", "FIN Buy CRM". This lets Gabriel filter and identify financial items at a glance.
 
 ---
 
 ## MEMORY SYSTEM
 
-This folder contains a file called MEMORY.md. It is your external memory for this workspace — use it to bridge the gap between sessions.
+This folder contains a file called `MEMORY.md`. It is the external memory for this workspace — use it to bridge the gap between sessions.
 
-**At the start of every session:** Read MEMORY.md before responding. Use what you find to inform your work — don't announce it, just be informed by it.
+**At the start of every session:** Read `MEMORY.md` before responding. Use what you find to inform your work — don't announce it, just be informed by it.
 
-**Memory is user-triggered only.** Do not automatically write to MEMORY.md. Only add entries when the user explicitly asks — using phrases like "remember this," "don't forget," "make a note," "log this," "save this," or "create session notes." When triggered, write the information to MEMORY.md immediately and confirm you've done it.
+**Memory is user-triggered only.** Do not automatically write to `MEMORY.md`. Only add entries when Gabriel explicitly asks — using phrases like "remember this," "don't forget," "make a note," "log this," "save this," or "create session notes." When triggered, write the information immediately and confirm.
 
-**All memories are persistent.** Entries stay in MEMORY.md until the user explicitly asks to remove or change them. Do not auto-delete or expire entries.
-
-**Flag contradictions.** If the user asks you to remember something that conflicts with an existing memory, don't silently overwrite it. Flag the conflict and ask how to reconcile it.
+**All memories are persistent** — they stay until Gabriel explicitly asks to remove or change them.
