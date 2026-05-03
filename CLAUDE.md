@@ -65,6 +65,11 @@ When creating a Google Calendar event or Google Task from this folder, always pr
 
 ---
 
+## MUM or REJANE
+
+When asking for MUM or Rejane investment advise Please read MUM.md
+
+
 ## MEMORY SYSTEM
 
 This folder contains a file called `MEMORY.md`. It is the external memory for this workspace — use it to bridge the gap between sessions.
